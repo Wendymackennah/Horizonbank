@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
+#  Mobank Web Application
+*****
+### Author :
+1. Mugo Joseph Wamiti and Weddy Makena
+****
+## Project Description
+MoBank is a Web banking application designed to provide a comprehensive and seamless banking experience on your mobile device. The app allows users to perform a variety of financial activities such as transferring funds, purchasing airtime, managing accounts and cards, and applying for loans. With its user-friendly interface, MoBank ensures secure and efficient banking on the go. This app is built with React Js and TypeScript for a smooth web interactivity.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Features
+1. Fund Transfers
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Send to Same Bank: Transfer funds instantly between MoBank accounts.
+    Send to Another Bank: Securely transfer funds to accounts at other banks.
+    Send to Mobile: Send money directly to mobile wallets (e.g., M-Pesa, Airtel Money).
 
-## Expanding the ESLint configuration
+2. Airtime Purchase
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+    Buy airtime for yourself or others for all major telecom service providers.
+    
+3. Account and Card Management
 
-- Configure the top-level `parserOptions` property like this:
+    Add and manage multiple accounts and cards under one profile.
+    View detailed transaction history for each linked account and card.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. Loan Services. 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    Apply for loans directly within the app.
+    Check loan eligibility, terms, and repayment schedules.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+5. Security Features
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    Multi-factor authentication (MFA) for secure login and transactions.
+    End-to-end encryption for all data and transactions.
+
+6. Real-time Notifications
+
+    Receive notifications for transactions, account activity, and important updates.
+    Customizable alert settings for a personalized experience.
+7. User-Friendly Interface
+
+    Intuitive and responsive design for easy navigation and a seamless user experience.
+    Accessibility features for users with different needs.
+
+8. Transaction History
+
+    View detailed records of all transactions.
+    Download transaction statements for accounting purposes.
+
+
+******
+*****
+## SetUp Instruction
+### Requirements
+* [Environment](https://nodejs.org/en) - A JavaScript runtime to run the project locally.
+* [FRAMEWORK](https://vite.dev/guide/) - Framework for building web applications.
+
+* Text editor eg [Visual Studio Code](https://code.visualstudio.com/download)
+
+
+### Getting Started
+
+
+1. Clone the repository
+First, clone the project repository to your local machine
+
+    ```bash
+    git clone https://github.com/Wendymackennah/mo-bank
+    ```
+
+    ```bash
+    cd mo-bank
+    ```
+
+2. Install dependencies
+After cloning the repository, run the following command to install the necessary dependencies:
+
+    ```bash
+    npm install
+     ```
+
+3.  Start development
+ To start the app in development mode, you can run:
+
+    ```bash
+    npm run dev
+    ```
+
+
+## Technologies Used
+
+1. Typescript
+2. ReactJs
+3. Redux
+*****
+## Contact Information
+* Email : 
+1. wamiti8711@gmail.com
+2. wendymackennah5@gmail.com
+*****
