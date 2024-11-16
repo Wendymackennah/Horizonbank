@@ -92,6 +92,7 @@ After cloning the repository, run the following command to install the necessary
 1. Typescript
 2. ReactJs
 3. Redux
+4. Material UI
 *****
 ## Contact Information
 * Email : 
