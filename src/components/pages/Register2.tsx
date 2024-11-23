@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Button, TextField, Typography, MenuItem, FormControlLabel, Checkbox, Select, InputLabel, FormControl } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
-import PublicIcon from "@mui/icons-material/Public";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
 import Signup from "../../assets/images/Signup.png"; 
+import EmailIcon from '@mui/icons-material/Email';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 
-const Register: React.FC = () => {
+const Register2: React.FC = () => {
   return (
     <Box
       sx={{
@@ -56,22 +56,11 @@ const Register: React.FC = () => {
           Transforming Your Financial Journey
         </Typography>
 
-        {/* Form Fields */}
-        <FormControl fullWidth sx={{ mb: 3 }}>
-          <InputLabel id="country-label">
-            <PublicIcon sx={{ mr: 1 }} /> Select your country
-          </InputLabel>
-          <Select labelId="country-label" defaultValue="">
-            <MenuItem value="USA">USA</MenuItem>
-            <MenuItem value="Kenya">Kenya</MenuItem>
-            <MenuItem value="UK">UK</MenuItem>
-          </Select>
-        </FormControl>
 
         <TextField
           fullWidth
           variant="outlined"
-          label="Account number"
+          label="Full name"
           InputProps={{
             startAdornment: <PersonIcon sx={{ color: "gray", mr: 1 }} />,
           }}
@@ -81,9 +70,29 @@ const Register: React.FC = () => {
         <TextField
           fullWidth
           variant="outlined"
-          label="ID Number"
+          label="Email"
           InputProps={{
-            startAdornment: <CreditCardIcon sx={{ color: "gray", mr: 1 }} />,
+            startAdornment: <EmailIcon  sx={{ color: "gray", mr: 1 }} />,
+          }}
+          sx={{ mb: 3 }}
+        />
+
+        <TextField
+          fullWidth
+          variant="outlined"
+          label="Password"
+          InputProps={{
+            startAdornment: <LockOpenIcon sx={{ color: "gray", mr: 1 }} />,
+          }}
+          sx={{ mb: 3 }}
+        />
+
+        <TextField 
+          fullWidth
+          variant="outlined"
+          label="Repeat Password"
+          InputProps={{
+            startAdornment: <LockOpenIcon sx={{ color: "gray", mr: 1 }} />,
           }}
           sx={{ mb: 3 }}
         />
@@ -111,16 +120,15 @@ const Register: React.FC = () => {
           }}
           fullWidth
         >
-          <Link   
-           to="/"
-           style={{
-            color:"#ffffff",
+         <Link
+            to="/emailverification"
+            style={{
+             color:"#ffffff",
            }}
-           > 
-           Complete Registration
-          </Link>
-        </Button> 
-
+           >
+            Complete Registration
+         </Link>
+       </Button>
         <Typography align="center" sx={{ mt: 2, fontSize: "0.875rem", color: "gray" }}>
           HAVE AN ACCOUNT?{" "} 
           <Link 
@@ -133,11 +141,13 @@ const Register: React.FC = () => {
           >
           Login
           </Link>
+
+          
         </Typography>
       </Box>
     </Box>
   );
 };
 
-export default Register;
+export default Register2;
 
