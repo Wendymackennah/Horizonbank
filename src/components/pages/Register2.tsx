@@ -5,8 +5,16 @@ import PersonIcon from "@mui/icons-material/Person";
 import Signup from "../../assets/images/Signup.png"; 
 import EmailIcon from '@mui/icons-material/Email';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+
 
 const Register2: React.FC = () => {
+  const theme = useTheme();
+  const islargeScreen = useMediaQuery(theme.breakpoints.up('md'));
+
+
   return (
     <Box
       sx={{
@@ -18,26 +26,30 @@ const Register2: React.FC = () => {
       }}
     >
       {/* Left Section */}
-      <Box
-        sx={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#fff",
-        }}
-      >
-        <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
-          Welcome to MoBank Online
-        </Typography>
-        <Typography variant="h6" sx={{ color: "gray", mb: 4 }}>
-          Unlock the Power of Smart Banking
-        </Typography>
-        {/* Image will be imported */}
-        <Box component="img" src={Signup} alt="Bank Illustration" sx={{ width: "300px" }} />
-      </Box>
-
+      {
+        islargeScreen && (
+          <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#fff",
+          }}
+        >
+          <Typography variant="h3" sx={{ fontWeight: "bold", mb: 2 }}>
+            Welcome to MoBank Online
+          </Typography>
+          <Typography variant="h6" sx={{ color: "gray", mb: 4 }}>
+            Unlock the Power of Smart Banking
+          </Typography>
+          {/* Image will be imported */}
+          <Box component="img" src={Signup} alt="Bank Illustration" sx={{ width: "300px" }} />
+        </Box>
+  
+        )
+      }
       {/* Right Section */}
       <Box
         sx={{
