@@ -11,33 +11,41 @@ const EmailVerification: React.FC = () => {
         alignItems: "center",
         justifyContent: "center",
         height: "100vh",
-        padding: "0 16px",
+        margin: 0,
+        padding: 0,
+        boxSizing: "border-box",
+        width: "100vw",
         backgroundColor: "#fff",
         fontFamily: "Arial, sans-serif",
       }}
     >
-      {/* Check Icon */}
       <CheckCircleIcon
         sx={{
-          fontSize: 80,
+          fontSize: { xs: 60, sm: 80 },
           color: "#117C2C",
           marginBottom: "16px",
         }}
       />
 
-      {/* Title */}
-      <Typography variant="h5" sx={{ fontWeight: "bold", marginBottom: "8px" }}>
+      <Typography
+        variant="h5"
+        sx={{
+          fontWeight: "bold",
+          marginBottom: "8px",
+          fontSize: { xs: "1.2rem", sm: "1.5rem" },
+        }}
+      >
         Check Email to Complete
       </Typography>
 
-      {/* Description */}
       <Typography
         variant="body1"
         align="center"
         sx={{
           color: "gray",
-          maxWidth: "400px",
+          maxWidth: { xs: "90%", sm: "400px" },
           marginBottom: "24px",
+          fontSize: { xs: "0.9rem", sm: "1rem" },
         }}
       >
         Thank you for signing up with <strong>MOBANK</strong>, we are happy to
@@ -70,11 +78,11 @@ const EmailVerification: React.FC = () => {
         your account activation.
       </Typography>
 
-      {/* OTP Input */}
       <Box
         sx={{
           display: "flex",
-          gap: "8px",
+          gap: { xs: "3px", sm: "5px" },
+          justifyContent: "center",
           marginBottom: "24px",
         }}
       >
@@ -84,27 +92,37 @@ const EmailVerification: React.FC = () => {
             variant="outlined"
             inputProps={{
               maxLength: 1,
-              style: { textAlign: "center", fontSize: "1.5rem", width: "50px" },
+              style: {
+                textAlign: "center",
+                fontSize: "0.9rem",
+                width: "28px",
+                height: "40px",
+              },
+            }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                padding: "0",
+              },
             }}
           />
         ))}
       </Box>
 
-      {/* Confirm Button */}
       <Button
         variant="contained"
         sx={{
           background: "linear-gradient(to right, #117C2C, #3E70A1)",
           color: "#fff",
-          padding: "12px 0", // Adjusted padding for a bigger button
+          padding: { xs: "8px 16px", sm: "12px 32px", lg: "12px 36px" },
           fontWeight: 600,
           textTransform: "none",
           borderRadius: "8px",
+          fontSize: { xs: "0.8rem", sm: "1rem", lg: "1.1rem" },
+          width: { xs: "80%", sm: "50%", lg: "25%" },
           "&:hover": {
             background: "linear-gradient(to right, #0072ff, #00b0ff)",
           },
         }}
-        fullWidth
       >
         Confirm
       </Button>

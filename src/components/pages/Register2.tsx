@@ -76,7 +76,15 @@ const Register2: React.FC = () => {
           InputProps={{
             startAdornment: <PersonIcon sx={{ color: "gray", mr: 1 }} />,
           }}
-          sx={{ mb: 3 }}
+          sx={{
+            mb: 3,
+            maxWidth: "100%",
+            width: islargeScreen ? "100%" : "120%",
+            // fontSize: islargeScreen ? "1rem" : "1.2rem",
+            // '& .MuiInputBase-root': {
+            //   height: islargeScreen ? "56px" : "64px",
+            // },
+          }}
         />
 
         <TextField
