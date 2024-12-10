@@ -1,0 +1,1 @@
+// This component will serve as the wrapper layout for all dashboard-related pages.
