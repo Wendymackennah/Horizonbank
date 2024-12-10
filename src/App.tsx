@@ -1,10 +1,10 @@
 import { Routes, Route} from 'react-router-dom';
-import Register from "../src/components/pages/Register"
-import Login from "../src/components/pages/Login"
-import Register2 from "../src/components/pages/Register2"
+import Register from "./components/pages/pages/Register"
+import Login from "./components/pages/pages/Login"
+import Register2 from "./components/pages/pages/Register2"
 
 import "./App.css"
-import EmailVerification from './components/pages/EmailVerification';
+import EmailVerification from './components/pages/pages/EmailVerification';
 
 
 function App() {
