@@ -86,6 +86,12 @@ After cloning the repository, run the following command to install the necessary
     npm run dev
     ```
 
+## System design
+
+*** 
+https://lucid.app/lucidchart/66392137-07a7-40dc-8928-56ef673645f9/edit?viewport_loc=-719%2C-20%2C1474%2C882%2C0_0&invitationId=inv_774376e4-21e9-4354-a1a9-86f8a7ae06d0 
+
+***
 
 ## Technologies Used
 
